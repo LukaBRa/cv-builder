@@ -1,0 +1,100 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.container {
+  background-color: rgb(246, 246, 246);
+  width: 100vw;
+  padding: 30px 60px;
+  display: flex;
+}
+
+.forms {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-div {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(116, 116, 128, 0.2) 0px 7px 29px 0px;
+}
+
+.form-div h2 {
+  margin-bottom: 15px;
+  color: rgb(65, 64, 64);
+}
+
+.form-div h2 i {
+  margin-right: 5px;
+}
+
+.clear-btn {
+  color: rgb(231, 61, 61);
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.clear-btn i {
+  margin-right: 5px;
+}
+
+.center-items{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-input{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.form-input label {
+  font-weight: bold;
+  color: rgb(65, 64, 64);
+}
+
+.form-input .form-field{
+  padding: 10px;
+  background-color: rgb(232, 236, 237);
+  border: 1px solid rgb(241, 235, 235);
+  border-radius: 5px;
+}
+
+.flex-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-form-btn {
+  background-color: white;
+  color: rgb(65, 64, 64);
+  margin-top: 10px;
+  border: 1px solid rgb(65, 64, 64);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.add-form-btn:hover{
+  background-color: rgb(240, 240, 240);
+}
