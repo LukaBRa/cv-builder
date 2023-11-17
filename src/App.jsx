@@ -36,6 +36,22 @@ function App() {
     setEducation((currentEducations) => [...currentEducations, {id: Date.now(), schoolName: newEducation.schoolName, degree: newEducation.degree, startDate: newEducation.startDate, endDate: newEducation.endDate, location: newEducation.location}]);
   }
 
+  /* Handlers for experience */
+  const handleNewExperience = (newExperience) => { 
+    setExperience((currentExperience) => [...currentExperience, {id: Date.now(), companyName: newExperience.companyName, role: newExperience.role, startDate: newExperience.startDate, endDate: newExperience.endDate, location: newExperience.location}]);
+  }
+
+  /* Handle event for clearing resume */
+  const handleClearResume = () => {
+    setResume({
+      fullName: '',
+      email: '',
+      phoneNumber: '',
+      address: '',
+    });
+    setEducation([]);
+    setExperience([]);
+  }
 
   return (
     <div className="container">
@@ -45,7 +61,7 @@ function App() {
 
         {/* Clear Resume Button */}
         <div className="form-div center-items">
-          <button className="clear-btn"><i className="fa-solid fa-trash-can"></i> Clear Resume</button>
+          <button onClick={handleClearResume} className="clear-btn"><i className="fa-solid fa-trash-can"></i> Clear Resume</button>
         </div>
       
         {/* Personal Details Form */}
@@ -60,7 +76,7 @@ function App() {
         <Education handleNewEducation={handleNewEducation}/>
 
         {/* Experience From */}
-        <Experience />
+        <Experience handleNewExperience={handleNewExperience}/>
       </div>
 
       {/* Resume container */}

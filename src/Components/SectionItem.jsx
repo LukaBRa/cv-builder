@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 export default function SectionItem({ item, type }) {
     return (
@@ -18,4 +19,9 @@ export default function SectionItem({ item, type }) {
 
         </div>
     )
+}
+
+SectionItem.propTypes = {
+    item: PropTypes.object,
+    type: PropTypes.string
 }
