@@ -1,5 +1,10 @@
 
-export default function PersonalDetails() {
+export default function PersonalDetails({ 
+    handleFullnameChange,
+    handleEmailChange,
+    handlePhoneChange,
+    handleAddressChange
+    }) {
     return (
         <div className="form-div">
             <h2>Personal Details</h2>
@@ -9,6 +14,7 @@ export default function PersonalDetails() {
                     className="form-field"
                     type="text"
                     placeholder="Enter full name"
+                    onChange={(e) => handleFullnameChange(e.target.value)}
                 />
             </div>
             <div className="form-input">
@@ -17,6 +23,7 @@ export default function PersonalDetails() {
                     className="form-field"
                     type="text"
                     placeholder="Enter email"
+                    onChange={(e) => handleEmailChange(e.target.value)}
                 />
             </div>
             <div className="form-input">
@@ -24,7 +31,8 @@ export default function PersonalDetails() {
                 <input 
                     className="form-field"
                     type="text"
-                    placeholder="Enter phone number" 
+                    placeholder="Enter phone number"
+                    onChange={(e) => handlePhoneChange(e.target.value)}
                 />
             </div>
             <div className="form-input">
@@ -32,7 +40,8 @@ export default function PersonalDetails() {
                 <input 
                     className="form-field"
                     type="text"
-                    placeholder="Enter address" 
+                    placeholder="Enter address"
+                    onChange={(e) => handleAddressChange(e.target.value)}
                 />
             </div>           
         </div>

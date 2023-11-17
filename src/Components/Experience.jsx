@@ -1,7 +1,7 @@
 export default function Experience() {
     return (
         <div className="form-div">
-            <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
+            <h2><i className="fa-solid fa-briefcase"></i> Experience</h2>
             <div>
             <div className="form-input">
                 <label>Company</label>
@@ -46,7 +46,7 @@ export default function Experience() {
                 />
             </div>
         </div>
-            <div className="center-items"><button className="add-form-btn"><i class="fa-solid fa-plus"></i> Add Experience</button></div>
+            <div className="center-items"><button className="add-form-btn"><i className="fa-solid fa-plus"></i> Add Experience</button></div>
         </div>
     )
 }
